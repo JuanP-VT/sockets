@@ -1,9 +1,10 @@
 import { Route, Routes } from "react-router-dom";
 import SignIn from "./components/pages/SignIn";
+import NavBar from "./components/NavBar";
 export default function App() {
   return (
     <div>
-      <div className=" flex bg-red-500  sds flex-row rel">Top Nav</div>
+      <NavBar />
       <Routes>
         <Route path="/signin" element={<SignIn />}></Route>
       </Routes>
